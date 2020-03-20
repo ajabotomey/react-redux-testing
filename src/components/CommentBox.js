@@ -33,8 +33,4 @@ class CommentBox extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { auth: state.auth} ;
-}
-
 export default connect(null, actions)(requireAuth(CommentBox));
